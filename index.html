@@ -11,7 +11,9 @@
 </head>
 <body>
     <div class="row">
+      
     <h1>CyberWorX</h1>
+    
     <div class="contact-banner">
         <h3>Contact Us</h3>
     
@@ -20,7 +22,6 @@
           submit
         </p>
       </div>
-  
       <form name="contact-form">
         <div class="form-control">
           <label>Contact Name</label>
@@ -45,6 +46,13 @@
           ></input>
           <div class="error hide">Phone is invalid</div>
         </div>
+
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <option selected>Reason For Contact</option>
+            <option value="1">Debuging services</option>
+            <option value="2">Searching of Employee</option>
+            <option value="3">Consultation</option>
+          </select>
   
         <div class="form-control">
           <label>Message</label>
@@ -56,7 +64,8 @@
   
         <button type="submit">SUBMIT</button>
       </form>
-    </div>
+  
+</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="./assets/js/index.js"></script>
