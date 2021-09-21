@@ -30,6 +30,19 @@ input[type=email] {
   color: rgb(214, 214, 214);
 }
 
+::-webkit-input-placeholder {
+  font-size: 13px;
+}
+::-moz-placeholder {
+  font-size: 13px;
+}
+:-ms-input-placeholder {
+  font-size: 13px;
+}
+::placeholder {
+  font-size: 13px;
+}
+
 input[type=password] {
   background: transparent;
   border: none;
@@ -48,7 +61,7 @@ input[type=password] {
 }
 
 .forgot_password {
-  color: grey;
+  color: rgb(179, 179, 179);
   font-weight: bold;
   font-size: 75%;
   padding: 50px;
