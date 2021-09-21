@@ -7,3 +7,7 @@ const isValidEmail = (email) => {
     const re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
     return re.test(String(phone).toLowerCase());
   };
+
+
+  const nameInput = document.querySelector(
+      'input[name="name"]');
