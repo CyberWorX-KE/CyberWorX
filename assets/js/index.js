@@ -1,9 +1,0 @@
-$(document).ready(function(){
-  $("form").submit(function(){
-  $(this).find(".required").each(function(){
-    if($(this).val()==""){
-      console.log("blank")
-    }
-  })
-  })
-})
