@@ -31,3 +31,20 @@ form{
     font-size: 20px;
     color: #333;
 }
+button{
+    padding: 10px;
+    font-size: 21px;
+    background-color: green;
+    border: 1px solid rgb(0, 114, 66);
+    border-radius: 10px;
+    transition: all 0.7s;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #333;
+    border: black;
+    color: white;
+}
+.hidden{
+    display: none;
+}
