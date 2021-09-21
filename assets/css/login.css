@@ -2,6 +2,7 @@ body {
   background-image: url("../img/login.jpg");
   text-align: center;
   padding: 50px;
+  background-position: 0 100px;
 }
 
 .login {
@@ -44,4 +45,11 @@ input[type=password] {
   border-radius: 2px;
   background-color: white;
   color: purple;
+}
+
+.forgot_password {
+  color: grey;
+  font-weight: bold;
+  font-size: 75%;
+  padding: 50px;
 }
