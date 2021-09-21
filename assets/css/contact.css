@@ -10,3 +10,24 @@
     align-items: center;
     justify-content: center;
 }
+.contact-us{
+    color: black;
+    font-size: 20px;
+    padding: 40px;
+}
+form{
+    padding: 10px;
+
+}
+
+.form-group label{
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.form-group input{
+    width: 320px;
+    padding: 10px;
+    font-size: 20px;
+    color: #333;
+}
