@@ -18,11 +18,12 @@
     <input type="text" class="form-control" id="search" placeholder="Search program">
     <form class="filter">
       <ul>
-      <p><input type="checkbox" class="" id="telco" value="telco"> telco</p>
-      <p><input type="checkbox" class="" id="bank" value="bank"> banks</p>
-      <p><input type="checkbox" class="" id="sacco" value="sacco"> saccos</p>
-    </ul>
-  </form>
+        <p><input type="checkbox" data-filter="all" class="checkbox" id="all" value="all"> All</p>
+        <p><input type="checkbox" data-filter="telco" class="checkbox" id="telco" value="telco"> telco</p>
+        <p><input type="checkbox" data-filter="bank" class="checkbox" id="bank" value="bank"> banks</p>
+        <p><input type="checkbox" data-filter="sacco" class="checkbox" id="sacco" value="sacco"> saccos</p>
+      </ul>
+    </form>
   </div>
   <div class="" id="directory">
 
@@ -36,28 +37,28 @@
         </tr>
       </thead>
       <tbody id="table_body">
-        <tr>
-          <th scope="row" id="program" name="telco">Safaricom<span class="">managed</span>
+        <tr class="telco">
+          <th scope="row" id="program" class="telco" name="telco">Safaricom<span class="">managed</span>
             <span class="">bounty splitting</span>
           </th>
           <td>9/21</td>
           <td>21</td>
           <td>0 - 20k</td>
-  
+
         </tr>
-        <tr>
+        <tr class="telco">
           <th scope="row" id="program" name="telco">Airtel<span class="">managed</span></th>
           <td>10/21</td>
           <td>3</td>
           <td>2000 - 40k</td>
         </tr>
         <tr>
-          <th scope="row" id="program"  name="bank">Equity bank<span class="">managed</span></th>
+          <th scope="row" id="program" name="bank">Equity bank<span class="">managed</span></th>
           <td>8/21</td>
           <td>5</td>
           <td>10k - 30k</td>
         </tr>
-        <tr>
+        <tr class="bank">
           <th scope="row" id="program" name="bank">Co-op bank<span class="">managed</span>
             <span class="">retesting</span>
           </th>
@@ -65,13 +66,13 @@
           <td>21</td>
           <td>0 - 200k</td>
         </tr>
-        <tr>
+        <tr class="sacco">
           <th scope="row" id="program" name="sacco">Kenya Police Sacco<span class="">managed</span></th>
           <td>10/21</td>
           <td>3</td>
           <td>20 - 40k</td>
         </tr>
-        <tr>
+        <tr class="telco">
           <th scope="row" id="program" name="telco">Telkom<span class="">managed</span></th>
           <td>8/21</td>
           <td>5</td>
@@ -83,13 +84,13 @@
           <td>21</td>
           <td>0 - 20k</td>
         </tr>
-        <tr>
+        <tr class="sacco">
           <th scope="row" id="program" name="saccos">Stimas saccos<span class="">managed</span></th>
           <td>10/21</td>
           <td>3</td>
           <td>20k - 40k</td>
         </tr>
-        <tr>
+        <tr class="bank">
           <th scope="row" id="program" name="bank">I&M bank<span class="">managed</span></th>
           <td>8/21</td>
           <td>5</td>

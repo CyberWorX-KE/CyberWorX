@@ -11,4 +11,25 @@
     })
   });
 
- 
+ var check = document.querySelectorAll('.checkbox');
+ const table = document.querySelectorAll('tbody tr');
+
+for (i = 0; i < check.length; i++) {
+  check[i].addEventListener("change", (e) =>{
+    e.preventDefault();
+    const filter = e.target.dataset.filter;
+    console.log(filter)
+    table.forEach((product) => {
+      if(filter == "all"){
+        product.style.display = ""
+      }else{
+        if (product.classList.contains(filter))
+        {
+          product.style.display = ""
+        }else{
+          product.style.display = "none"
+        }
+      }
+    })
+  })
+}
