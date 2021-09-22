@@ -38,7 +38,10 @@
       </thead>
       <tbody id="table_body">
         <tr class="telco">
-          <th scope="row" id="program" class="telco" name="telco">Safaricom<span class="">managed</span>
+
+          <th data-filter="safaricom" scope="row" id="program" class="telco" name="telco">
+            <img data-filter="safaricom" src="assets/img/safaricom.png">
+            Safaricom<span class="">managed</span>
             <span class="">bounty splitting</span>
           </th>
           <td>9/21</td>
@@ -47,19 +50,25 @@
 
         </tr>
         <tr class="telco">
-          <th scope="row" id="program" name="telco">Airtel<span class="">managed</span></th>
+          <th data-filter="airtel" scope="row" id="program" name="telco">
+            <img data-filter="airtel" src="assets/img/airtel.jpeg">
+            Airtel<span class="">managed</span></th>
           <td>10/21</td>
           <td>3</td>
           <td>2000 - 40k</td>
         </tr>
         <tr>
-          <th scope="row" id="program" name="bank">Equity bank<span class="">managed</span></th>
+          <th data-filter="equity bank" scope="row" id="program" name="bank">
+            <img data-filter="equity bank" src="assets/img/equity.jpeg">
+            Equity bank<span class="">managed</span></th>
           <td>8/21</td>
           <td>5</td>
           <td>10k - 30k</td>
         </tr>
         <tr class="bank">
-          <th scope="row" id="program" name="bank">Co-op bank<span class="">managed</span>
+          <th data-filter="cooperative" scope="row" id="program" name="bank">
+            <img data-filter="cooperative" src="assets/img/coop.jpeg">
+            Co-op bank<span class="">managed</span>
             <span class="">retesting</span>
           </th>
           <td>9/21</td>
@@ -67,37 +76,59 @@
           <td>0 - 200k</td>
         </tr>
         <tr class="sacco">
-          <th scope="row" id="program" name="sacco">Kenya Police Sacco<span class="">managed</span></th>
+          <th data-filter="Kenya Police Sacco" scope="row" id="program" name="sacco">
+            <img data-filter="Kenya Police Sacco" src="assets/img/policeSacco.jpeg">
+            Kenya Police Sacco<span class="">managed</span></th>
           <td>10/21</td>
           <td>3</td>
           <td>20 - 40k</td>
         </tr>
         <tr class="telco">
-          <th scope="row" id="program" name="telco">Telkom<span class="">managed</span></th>
+          <th data-filter="Telkom" scope="row" id="program" name="telco">
+            <img data-filter="Telkom" src="assets/img/telkom.jpeg">
+            Telkom<span class="">managed</span></th>
           <td>8/21</td>
           <td>5</td>
           <td>10k - 300k</td>
         </tr>
         <tr>
-          <th scope="row" id="program" name="mobile_pay">Jumia pay<span class="">managed</span></th>
+          <th data-filter="Jumia pay" scope="row" id="program" name="mobile_pay">
+            <img data-filter="Jumia pay" src="assets/img/jumia.jpeg">
+            Jumia pay<span class="">managed</span></th>
           <td>9/21</td>
           <td>21</td>
           <td>0 - 20k</td>
         </tr>
         <tr class="sacco">
-          <th scope="row" id="program" name="saccos">Stimas saccos<span class="">managed</span></th>
+          <th data-filter="Stima sacco" scope="row" id="program" name="saccos">
+            <img data-filter="Stima sacco" src="assets/img/stima.jpeg">
+            Stimas saccos<span class="">managed</span></th>
           <td>10/21</td>
           <td>3</td>
           <td>20k - 40k</td>
         </tr>
         <tr class="bank">
-          <th scope="row" id="program" name="bank">I&M bank<span class="">managed</span></th>
+          <th data-filter="I&M bank" scope="row" id="program" name="bank">
+            <img data-filter="I&M bank" src="assets/img/i&m.jpeg">
+            I&M bank<span class="">managed</span></th>
           <td>8/21</td>
           <td>5</td>
           <td>10k - 30k</td>
         </tr>
       </tbody>
     </table>
+    <form class="report">
+      <div>
+        <input type="text" class="form-control" name="" placeholder="title">
+      </div>
+      <div>
+        <input type="text" class="form-control" name="" placeholder="company" readonly></input>
+      </div>
+      <div>
+        <textarea type="text" class="form-control" name="" id="message" placeholder="message"></textarea>
+      </div>
+      <input type="submit" class="btn btn-danger" id="cancel_btn" value="cancel">
+    </form>
   </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
