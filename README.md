@@ -1,2 +1,0 @@
-# CyberWorX
-The Main Site
