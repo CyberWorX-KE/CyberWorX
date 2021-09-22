@@ -30,3 +30,8 @@ for (i = 0; i < check.length; i++) {
     })
   })
 }
+document.addEventListener("click", function(e){
+  e = e || window.event;
+  var target = e.target.dataset.filter;
+  console.log(target)
+}, false)

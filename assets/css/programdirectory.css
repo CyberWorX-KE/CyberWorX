@@ -38,7 +38,17 @@ position: absolute;
   cursor:pointer;
 
 }img{
-  border-radius: 25rem;
+  border-radius: 25px;
   width: 100px;
+  border: 2px solid red;
+ 
 
+}.report{
+  background-color: white;
+  padding: 20px;
+}.report input{
+  margin-bottom: 20px;
+  border:2px solid lightgray;
+}#message{
+  height: 200px;
 }
