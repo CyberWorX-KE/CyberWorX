@@ -1,19 +1,25 @@
 #directory{
-  /* margin-left: 20px; */
+margin-left: 200px;
   height: 15rem;
   margin-top: 100px;
 }.table{
-  margin-left: 100px;
+  /* margin-left: 50px; */
   background-color: white;
   height: 100vh;
+  width: 100%;
 }body{
-  background-color: lightgray
+  background-color: lightgray;
+  ;
 }#search{
-  margin-left: 200px;
   margin-bottom: 20px;
   width: 20rem;
 }.page_header{
   margin-top: 2px;
 }.filter{
-
+margin-top: 100px;
+z-index: 100;
+float: left;
+position: absolute;
+}#top_header{
+  margin: 25px
 }
