@@ -7,7 +7,7 @@
 body
 {
     min-height: 100vh;
-    background: url("./profile/backgrund.jfif") fixed no-repeat;
+    background: url("../img/profile/backgrund.jfif") fixed no-repeat;
     background-size: cover;
 }
 
