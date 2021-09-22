@@ -37,4 +37,8 @@ position: absolute;
 }#program{
   cursor:pointer;
 
+}img{
+  border-radius: 25rem;
+  width: 100px;
+
 }
