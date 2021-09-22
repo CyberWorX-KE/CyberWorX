@@ -1,0 +1,37 @@
+body {
+  margin: 100px;
+  border: 2px solid rgb(206, 0, 0);
+}
+
+.bug1 img {
+  float: left;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  width: 30%;
+}
+
+.bug1 {
+  padding: 50px;
+}
+
+.bug2 img {
+  float: left;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  width: 30%;
+}
+
+.bug2 {
+  padding: 50px;
+}
+
+.bug3 img {
+  float: left;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  width: 30%;
+}
+
+.bug3 {
+  padding: 50px;
+}
