@@ -1,12 +1,206 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    min-height: 100vh;
+    background: url('./images/photo-1551301622-6fa51afe75a9.jfif') fixed no-repeat;
+    background-size: cover;
+}
 
-.green-background {
-    background-color: green;
+.container
+{
+  width: 600px;
+  height: 500px;
+  background: inherit;
+ 
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  margin-left: -175px;
+  margin-top: -250px;
+  border-radius: 16px;
+}
+.card-container {
+  width: 350px;
+  height: 450px;
+  position: relative;
+  
+}
+.our-team 
+  {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: center;
+    overflow: hidden;
+ 
   }
 
-  .yellow-background {
-    background-color: yellow;
+  .our-team .picture 
+{
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-top: 40px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  position: relative;
+}
+.our-team .picture::before {
+    content: "";
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-color: #1369ce;
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    opacity: 0.9;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+  }
+  
+  .our-team:hover .picture::before {
+    height: 100%;
+  }
+  .our-team .picture::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #1369ce;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .our-team .picture img
+  {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      transform: scale(1);
+      transition: all 0.9s ease 0s;
+  }
+  .our-team :hover.picture img
+  {
+      box-shadow: 0 0 0 14px #f7f5ec;
+      transform: scale(0.7);
   }
 
-  .red-background {
+  .team-content
+  {
+      margin: 30px;
+      text-transform: uppercase;
+  }
+  .our-team .name
+  {
+      display: block;
+      color: crimson;
+      letter-spacing: 1;
+      font-size: 22px;
+    
+  }
+  .our-team .title
+  {
+      display: block;
+      font: 10px;
+      color: #f7f5ec;
+      letter-spacing: 1px;
+
+
+  }
+  .details
+  {
+      display: -ms-grid;
+      display: grid;
+      width: 100%;
+      height: 85px;
+      padding: 5px 0;
+      -ms-grid-columns:auto auto;
+      grid-template-columns: auto auto;
+      background-color: rgba(255,255,255,0.06);
+      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(20px);
+      position: absolute;
+      bottom: 0;
+            
+      border-radius: 0 0 16px 16px;
+  }
+  .details>div
+  {
+      margin-top: 10px;
+      font-size: 15px;
+      color: #fff;
+      padding: 5px;
+      
+  }
+  .details>div :first-child
+  {
+      border-right: 2px solid rgba(255,255,255,0.08);
+  }
+
+  .our-team .social {
+    width: 100%;
+    height: 37px;
+    padding: 0;
+    margin: 0;
     background-color: red;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    transition: all 0.5s ease 0s;
   }
+  
+  .our-team:hover .social {
+    bottom: 0;
+  }
+  
+  .our-team .social li {
+    display: inline-block;
+    margin-left: 10px;
+   
+   
+  }
+  
+  .our-team .social li a {
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    color: white;
+  
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+  }
+  
+  .our-team .social li a:hover {
+    color: #1369ce;
+ 
+    background-color: #f7f5ec;
+  }
+  
+  .social li a .fab {
+    transition: .8s;
+    margin-right: 10px;
+  }
+      
+    .social .fab:hover {
+        transform: rotateY(360deg);
+        
+    } 
+  

@@ -1,38 +1,60 @@
 <!DOCTYPE html>
-      <html>
-        <head>
-          <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-          <link href="css/styles.css" rel="stylesheet" type="text/css">
-          <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
-          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
-          crossorigin="anonymous"></script>
-          <script src="script.js"></script>
-          <title>Talk to the web page</title>
-        </head>
-        <body>
-          <div class="container">
-            <h1>Talk to the web page</h1>
-            <p>Click a button to say something to the web page. See what it says back!</p>
-
-            <button class="btn btn-primary" id="hello">Say "hello"</button>
-            <button class="btn btn-inverse" id="goodbye">Say "goodbye"</button>
-            <button class="btn btn-danger" id="stop">Say "stop copying me!"</button>
-
-            <div class="row">
-              <div class="col-md-6">
-                <h2>You said:</h2>
-                <ul class="unstyled">
-
-                </ul>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/brands.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <title>Glassmorphism Card 2</title>
+</head>
+<body>
+ <div class="container">
+     <div class="card-container">
+         <div class="our-team">
+             <div class="picture">
+                 <img src="./images/EllipseTwo.png" alt="">
+             </div>
+             <div class="team-content">
+               <h2 class="name">John deo</h2>
+               <h4 class="title">UI Designer</h4>
+             </div>
+              <div class="details">
+                  <div class="rating">
+                      <h5>86%</h5>
+                      <h6>Rating</h6>
+                  </div>
+                  <div class="activity">
+                      <h5>92%</h5>
+                      <h6>activity</h6>
+                  </div>
               </div>
+              <ul class="social">
+                  <li>
+                      <a href="">
+                          <i class="fab fa-facebook"></i>
+                      </a>
+                  </li>
 
-              <div class="col-md-6">
-                <h2>The web page said back:</h2>
-                <ul class="unstyled">
-
-                </ul>
-              </div>
-            </div>
-          </div>
-        </body>
-      </html>
+                  <li>
+                    <a href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+              </ul>
+         </div>
+     </div>
+ </div>
+</body>
+</html>
