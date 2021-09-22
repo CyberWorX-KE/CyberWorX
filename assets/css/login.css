@@ -1,0 +1,68 @@
+body {
+  background-image: url("../img/login.jpg");
+  text-align: center;
+  padding: 50px;
+  background-position: 0 100px;
+}
+
+.login {
+  border: 1px solid rgb(192, 192, 192);
+  background-color: white;
+  padding: 50px;
+  margin-left: 400px;
+  margin-right: 400px;
+
+}
+
+.login h5 {
+  padding: 50px;
+}
+
+input[type=email] {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(169, 169, 169);
+  padding-top: 50px;
+  font-weight: bold;
+}
+
+::placeholder {
+  color: rgb(214, 214, 214);
+}
+
+::-webkit-input-placeholder {
+  font-size: 13px;
+}
+::-moz-placeholder {
+  font-size: 13px;
+}
+:-ms-input-placeholder {
+  font-size: 13px;
+}
+::placeholder {
+  font-size: 13px;
+}
+
+input[type=password] {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(169, 169, 169);
+  padding-top: 50px;
+  font-weight: bold;
+}
+
+#login {
+  margin-top: 50px;
+  padding: 10px 100px;
+  border: 1px solid purple;
+  border-radius: 2px;
+  background-color: white;
+  color: purple;
+}
+
+.forgot_password {
+  color: rgb(179, 179, 179);
+  font-weight: bold;
+  font-size: 75%;
+  padding: 50px;
+}
