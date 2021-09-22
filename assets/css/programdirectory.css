@@ -11,7 +11,10 @@ margin-left: 200px;
   background-color: lightgray;
   ;
 }#search{
-  margin-bottom: 20px;
+  margin-top: 50px;
+  z-index: 100;
+  position: absolute;
+  margin-left: 170px;
   width: 20rem;
 }.page_header{
   margin-top: 2px;

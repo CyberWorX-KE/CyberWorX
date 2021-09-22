@@ -8,7 +8,7 @@
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/programdirectory.css">
-  <script src="assets/js/programdirectory.js"></script>
+  <!-- <script src="assets/js/programdirectory.js"></script> -->
   <title>CyberWorX</title>
 </head>
 
@@ -16,17 +16,17 @@
   <div class="" id="top_header">
     <h2 class="page_header">Find companies targets that are hackable and look at what they offer</h2>
     <input type="text" class="form-control" id="search" placeholder="Search">
-    <div class="filter">
+    <form class="filter">
       <ul>
-      <p><input type="checkbox" class="" value="telco"> telco</p>
-      <p><input type="checkbox" class="" value="telco"> banks</p>
-      <p><input type="checkbox" class="" value="telco"> saccos</p>
+      <p><input type="checkbox" class="" id="telco" value="telco"> telco</p>
+      <p><input type="checkbox" class="" value="bank"> banks</p>
+      <p><input type="checkbox" class="" value="sacco"> saccos</p>
     </ul>
-    </div>
+  </form>
   </div>
   <div class="" id="directory">
 
-    <table class="table">
+    <table class="table" id="table">
       <thead>
         <tr>
           <th scope="col">Program</th>
