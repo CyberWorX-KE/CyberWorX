@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/programdirectory.css">
+  <!-- <script src="assets/js/programdirectory.js"></script> -->
+  <title>CyberWorX</title>
+</head>
+
+<body>
+  <div class="" id="top_header">
+    <h2 class="page_header">Find companies targets that are hackable and look at what they offer</h2>
+    <input type="text" class="form-control" id="search" placeholder="Search program">
+    <form class="filter">
+      <ul>
+        <p><input type="checkbox" data-filter="all" class="checkbox" id="all" value="all"> All</p>
+        <p><input type="checkbox" data-filter="telco" class="checkbox" id="telco" value="telco"> telco</p>
+        <p><input type="checkbox" data-filter="bank" class="checkbox" id="bank" value="bank"> banks</p>
+        <p><input type="checkbox" data-filter="sacco" class="checkbox" id="sacco" value="sacco"> saccos</p>
+      </ul>
+    </form>
+  </div>
+  <div class="" id="directory">
+
+    <table class="table" id="table">
+      <thead>
+        <tr>
+          <th scope="col">Program</th>
+          <th scope="col">Launch</th>
+          <th scope="col">reports</th>
+          <th scope="col">bounty in(kshs)</th>
+        </tr>
+      </thead>
+      <tbody id="table_body">
+        <tr class="telco">
+          <th scope="row" id="program" class="telco" name="telco">Safaricom<span class="">managed</span>
+            <span class="">bounty splitting</span>
+          </th>
+          <td>9/21</td>
+          <td>21</td>
+          <td>0 - 20k</td>
+
+        </tr>
+        <tr class="telco">
+          <th scope="row" id="program" name="telco">Airtel<span class="">managed</span></th>
+          <td>10/21</td>
+          <td>3</td>
+          <td>2000 - 40k</td>
+        </tr>
+        <tr>
+          <th scope="row" id="program" name="bank">Equity bank<span class="">managed</span></th>
+          <td>8/21</td>
+          <td>5</td>
+          <td>10k - 30k</td>
+        </tr>
+        <tr class="bank">
+          <th scope="row" id="program" name="bank">Co-op bank<span class="">managed</span>
+            <span class="">retesting</span>
+          </th>
+          <td>9/21</td>
+          <td>21</td>
+          <td>0 - 200k</td>
+        </tr>
+        <tr class="sacco">
+          <th scope="row" id="program" name="sacco">Kenya Police Sacco<span class="">managed</span></th>
+          <td>10/21</td>
+          <td>3</td>
+          <td>20 - 40k</td>
+        </tr>
+        <tr class="telco">
+          <th scope="row" id="program" name="telco">Telkom<span class="">managed</span></th>
+          <td>8/21</td>
+          <td>5</td>
+          <td>10k - 300k</td>
+        </tr>
+        <tr>
+          <th scope="row" id="program" name="mobile_pay">Jumia pay<span class="">managed</span></th>
+          <td>9/21</td>
+          <td>21</td>
+          <td>0 - 20k</td>
+        </tr>
+        <tr class="sacco">
+          <th scope="row" id="program" name="saccos">Stimas saccos<span class="">managed</span></th>
+          <td>10/21</td>
+          <td>3</td>
+          <td>20k - 40k</td>
+        </tr>
+        <tr class="bank">
+          <th scope="row" id="program" name="bank">I&M bank<span class="">managed</span></th>
+          <td>8/21</td>
+          <td>5</td>
+          <td>10k - 30k</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+<script src="assets/js/programdirectory.js"></script>
+
+</html>

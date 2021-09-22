@@ -1,0 +1,40 @@
+#directory{
+margin-left: 200px;
+  height: 15rem;
+  margin-top: 100px;
+  margin-right: 50px;
+}.table{
+  /* margin-left: 50px; */
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+  border-radius: 10px;
+}body{
+  background-color: lightgray;
+  ;
+}#search{
+  justify-content: flex-start;
+  margin-top: 50px;
+  z-index: 100;
+  position: absolute;
+  margin-left: 170px;
+  width: 20rem;
+}.page_header{
+  margin-top: 2px;
+}.filter{
+margin-top: 100px;
+z-index: 100;
+float: left;
+position: absolute;
+}#top_header{
+  margin: 25px
+}span{
+  font-size: 12px;
+  padding: 2px;
+  background-color:lightgray;
+  margin-left: 10px;
+  font-weight: 300;
+}#program{
+  cursor:pointer;
+
+}
