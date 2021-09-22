@@ -46,6 +46,13 @@ position: absolute;
 }.report{
   background-color: white;
   padding: 20px;
+  display: none;
+  z-index: 100;
+  width: 500px;
+  position: absolute;
+  /* display: none; */
+  top: 10px;
+  right: 100px;
 }.report input{
   margin-bottom: 20px;
   border:2px solid lightgray;

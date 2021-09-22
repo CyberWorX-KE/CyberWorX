@@ -1,3 +1,15 @@
+$(document).ready(function () {
+  $("#program").click(function () {
+    $(".report").show();
+  });
+  $("#program").click(function () {
+    $(".report").show();
+  });
+  $('#cancel_btn').click(function () {
+    $(".report").hide();
+  })
+})
+
 var filterInput = document.getElementById("search");
 const head = document.querySelectorAll('tbody tr');
 
@@ -30,8 +42,24 @@ for (i = 0; i < check.length; i++) {
     })
   })
 }
-document.addEventListener("click", function(e){
+document.addEventListener("click", function (e) {
   e = e || window.event;
   var target = e.target.dataset.filter;
   console.log(target)
+  const report = $(".report");
+
+  report.html(`
+  <form class="report">
+      <div>
+        <input type="text" class="form-control" name="" placeholder="title">
+      </div>
+      <div>
+        <input type="text" class="form-control" name="" placeholder=${target} readonly></input>
+      </div>
+      <div>
+        <textarea type="text" class="form-control" name="" id="message" placeholder="message"></textarea>
+      </div>
+      <input type="submit" class="btn btn-danger" value="cancel">
+    </form>
+  `)
 }, false)
