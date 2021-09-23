@@ -64,3 +64,36 @@
 .log {
   text-decoration: none;
 }
+
+a.nav-link {
+  color: white;
+  font-weight: bold;
+}
+
+a.nav-link.active {
+  color: red;
+  font-weight: bold;
+}
+
+a.nav-link.active:hover {
+  color: blue;
+  font-weight: bold;
+}
+
+a.nav-link:hover {
+  color: red;
+  font-weight: bold;
+}
+
+a.log.far.fa-user{
+  color: red;
+  font-weight: bold;
+}
+
+
+a.log.far.fa-user:hover{
+  color: blue;
+  background-color: white;
+  border-radius: 10px;
+  padding: 4px;
+}
