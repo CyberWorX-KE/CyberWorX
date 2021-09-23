@@ -1,6 +1,12 @@
-body {
-  margin: 100px;
-  border: 2px solid rgb(206, 0, 0);
+.myreport {
+  margin-top: 80px;
+  margin-left: 90px;
+  margin-right: 90px;
+  
+}
+
+.header {
+  position: static;
 }
 
 .bug1 img {
@@ -34,4 +40,27 @@ body {
 
 .bug3 {
   padding: 50px;
+}
+
+
+#logo {
+  border-radius: 50px;
+}
+
+
+.contact:hover{
+  color: red;
+  background-color: white;
+}
+
+.contact {
+  background-color: red;
+  color: black;
+  padding: 4px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.log {
+  text-decoration: none;
 }
