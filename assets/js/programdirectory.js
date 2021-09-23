@@ -46,6 +46,14 @@ document.addEventListener("click", function (e) {
   e = e || window.event;
   var target = e.target.dataset.filter;
   console.log(target)
+  if (target == "cancel") {
+    document.forms['report'].submit();
+    window.close();
+  }else if(target == "send"){
+    alert("Your report has been submitted")
+    document.forms['report'].submit();
+    window.load();
+  }
   const report = $(".report");
 
   report.html(`
@@ -59,7 +67,10 @@ document.addEventListener("click", function (e) {
       <div>
         <textarea type="text" class="form-control" name="" id="message" placeholder="message"></textarea>
       </div>
-      <input type="submit" class="btn btn-danger" value="cancel">
+      <div>
+      <input type="submit" class="btn btn-danger" data-filter="cancel" value="cancel">
+      <input type="submit" class="btn btn-primary" data-filter="send" value="Send">
+      </div>
     </form>
   `)
 }, false)
