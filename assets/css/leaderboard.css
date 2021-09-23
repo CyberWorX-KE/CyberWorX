@@ -1,14 +1,24 @@
 #main ,html {
- background-color: antiquewhite;
+ background-color: white;
  font-size: 15px;
 }
 #row1:hover, #row2:hover, #row3:hover,#row4:hover,#row5:hover,#row6:hover,#row7:hover,#row8:hover,#row9:hover,#row10:hover{
-    background-color:chocolate;
-    font-size: 30px;
+    background-color:red;
+    font-size: 16px;
 } 
+
 #imgicon{
 height: 70px;
 border-radius: 80% ;
 margin-right: 20px;
 
+}
+
+td .hire:hover {
+    background-color: white;
+    color: red;
+}
+td .invite:hover{
+    background-color: black;
+    color: red;
 }
