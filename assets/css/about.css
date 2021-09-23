@@ -1,0 +1,25 @@
+body{
+    background-color: white;
+}
+
+#logo {
+    border-radius: 50px;
+}
+
+
+.contact:hover{
+    color: red;
+    background-color: white;
+}
+
+.contact {
+    background-color: red;
+    color: black;
+    padding: 4px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.log {
+    text-decoration: none;
+}
