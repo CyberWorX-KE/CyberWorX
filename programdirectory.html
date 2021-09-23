@@ -14,8 +14,29 @@
 </head>
 
 <body>
-  <div class="" id="top_header">
-    <h2 class="page_header">Find companies targets that are hackable and look at what they offer</h2>
+
+  <div class="header">
+
+    <nav class="navbar fixed-top navbar-light bg-dark top" style="height: 60px;">
+      <div class="container-fluid">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="myreport.html">My Reports</a>
+        <a class="nav-link active" href="programdirectory.html" >Program Directory</a>
+          <a class="nav-link" href="leaderboard.html"> Leaderboard</a>
+          <a class="nav-link" href="contact.html" ></a>
+          <a class="nav-link" href="contact.html" ></a>
+          <a class="nav-link" href="contact.html" ></a>
+          <a class="nav-link" href="contact.html" ></a>
+          <a class="nav-link" href="profile.html" ><img src="assets/avatars/man.png" alt="icon" id="avatar" ></a>
+      </div>
+    </nav>
+
+  </div>
+
+
+
+
+  <div class="fixed-top" id="top_header">
     <input type="text" class="form-control" id="search" placeholder="Search program">
     <form class="filter">
       <ul>
@@ -26,7 +47,8 @@
       </ul>
     </form>
   </div>
-  <div class="" id="directory">
+
+  <div class="progs" id="directory">
 
     <table class="table" id="table">
       <thead>
@@ -41,7 +63,7 @@
         <tr class="telco">
 
           <th data-filter="safaricom" scope="row" id="program" class="telco" name="telco">
-            <img data-filter="safaricom" src="assets/img/safaricom.png">
+            <img data-filter="safaricom" class="companylogos" src="assets/img/safaricom.png">
             Safaricom<span class="">managed</span>
             <span class="">bounty splitting</span>
           </th>
@@ -52,7 +74,7 @@
         </tr>
         <tr class="telco">
           <th data-filter="airtel" scope="row" id="program" name="telco">
-            <img data-filter="airtel" src="assets/img/airtel.jpeg">
+            <img data-filter="airtel" class="companylogos" src="assets/img/airtel.jpeg">
             Airtel<span class="">managed</span></th>
           <td>10/21</td>
           <td>3</td>
@@ -60,7 +82,7 @@
         </tr>
         <tr>
           <th data-filter="equity bank" scope="row" id="program" name="bank">
-            <img data-filter="equity bank" src="assets/img/equity.jpeg">
+            <img data-filter="equity bank" class="companylogos" src="assets/img/equity.jpeg">
             Equity bank<span class="">managed</span></th>
           <td>8/21</td>
           <td>5</td>
@@ -68,7 +90,7 @@
         </tr>
         <tr class="bank">
           <th data-filter="cooperative" scope="row" id="program" name="bank">
-            <img data-filter="cooperative" src="assets/img/coop.jpeg">
+            <img data-filter="cooperative" class="companylogos" src="assets/img/coop.jpeg">
             Co-op bank<span class="">managed</span>
             <span class="">retesting</span>
           </th>
@@ -78,7 +100,7 @@
         </tr>
         <tr class="sacco">
           <th data-filter="Kenya Police Sacco" scope="row" id="program" name="sacco">
-            <img data-filter="Kenya Police Sacco" src="assets/img/policeSacco.jpeg">
+            <img data-filter="Kenya Police Sacco" class="companylogos" src="assets/img/policeSacco.jpeg">
             Kenya Police Sacco<span class="">managed</span></th>
           <td>10/21</td>
           <td>3</td>
@@ -86,7 +108,7 @@
         </tr>
         <tr class="telco">
           <th data-filter="Telkom" scope="row" id="program" name="telco">
-            <img data-filter="Telkom" src="assets/img/telkom.jpeg">
+            <img data-filter="Telkom" class="companylogos" src="assets/img/telkom.jpeg">
             Telkom<span class="">managed</span></th>
           <td>8/21</td>
           <td>5</td>
@@ -94,7 +116,7 @@
         </tr>
         <tr>
           <th data-filter="Jumia pay" scope="row" id="program" name="mobile_pay">
-            <img data-filter="Jumia pay" src="assets/img/jumia.jpeg">
+            <img data-filter="Jumia pay" class="companylogos" src="assets/img/jumia.jpeg">
             Jumia pay<span class="">managed</span></th>
           <td>9/21</td>
           <td>21</td>
@@ -102,7 +124,7 @@
         </tr>
         <tr class="sacco">
           <th data-filter="Stima sacco" scope="row" id="program" name="saccos">
-            <img data-filter="Stima sacco" src="assets/img/stima.jpeg">
+            <img data-filter="Stima sacco" class="companylogos" src="assets/img/stima.jpeg">
             Stimas saccos<span class="">managed</span></th>
           <td>10/21</td>
           <td>3</td>
@@ -110,7 +132,7 @@
         </tr>
         <tr class="bank">
           <th data-filter="I&M bank" scope="row" id="program" name="bank">
-            <img data-filter="I&M bank" src="assets/img/i&m.jpeg">
+            <img data-filter="I&M bank" class="companylogos" src="assets/img/i&m.jpeg">
             I&M bank<span class="">managed</span></th>
           <td>8/21</td>
           <td>5</td>
