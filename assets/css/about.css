@@ -22,4 +22,14 @@ body{
 
 .log {
     text-decoration: none;
+}.about{
+    margin: 100px;
+    font-size: 20px;
+
+}
+.title{
+    text-align:center;
+    font-size: 70px;
+}.title:hover{
+    text-decoration: underline;
 }
