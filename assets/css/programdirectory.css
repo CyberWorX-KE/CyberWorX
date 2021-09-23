@@ -37,7 +37,7 @@ position: absolute;
 }#program{
   cursor:pointer;
 
-}img{
+}.companylogos{
   border-radius: 25px;
   width: 100px;
   border: 2px solid red;
@@ -57,4 +57,31 @@ position: absolute;
   border:2px solid lightgray;
 }#message{
   height: 200px;
+}
+
+#avatar {
+  height: 40px;
+}
+
+.progs {
+  padding-top: 50px;
+}
+
+a.nav-link {
+  color: white;
+  font-weight: bold;
+}
+
+a.nav-link:hover {
+  color: red;
+}
+
+a.nav-link.active {
+  color: red;
+  font-weight: bold;
+}
+
+a.nav-link.active:hover {
+  color: blue;
+  font-weight: bold;
 }
