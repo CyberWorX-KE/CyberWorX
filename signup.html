@@ -65,6 +65,9 @@
     .then((userCredential) => {
     // Signed in 
     console.log(userCredential.user);
+    alert("account created successfully")
+    window.location.href = "login.html";
+
     signUpForm.reset()
     // ...
   })
