@@ -54,7 +54,7 @@
             <tbody>
                 <tr  id="row1">
                     <th scope="row">1</th>
-                   <td > <img src="assets/avatars/man.png" alt="icon" id="imgicon">Leon Ndemo</td>
+                   <td ><a style="text-decoration: none; color: black;" href="profile.html"> <img src="assets/avatars/man.png" alt="icon" id="imgicon">Leon Ndemo</a></td>
                     <td id=>1500pts</td>
                      <td><button type="button" class="hire btn btn-danger" >Hire</button> <button type="button" class="invite btn btn-success">Invite</button></td>
                 </tr>
@@ -128,6 +128,88 @@
     </div>
     
 </body>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
+    import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCdeccwnJZ07VbzsXVtaQ1EXfpwcqAnASM",
+      authDomain: "cyberworx-1dd68.firebaseapp.com",
+      projectId: "cyberworx-1dd68",
+      storageBucket: "cyberworx-1dd68.appspot.com",
+      messagingSenderId: "875669950412",
+      appId: "1:875669950412:web:d19e38199e526a8ea81769"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth();
+  
+    onAuthStateChanged(auth, (user) => {
+    if (user) {
+      // User is signed in, see docs for a list of available properties
+      // https://firebase.google.com/docs/reference/js/firebase.User
+      const uid = user.uid;
+      console.log(uid);
+  
+      // ...
+    } else {
+      // User is signed out
+      // ...
+      window.location.href = "login.html";
+  
+    }
+  });
+
+  const signOut = document.querySelector("#avatar");
+  signOut.addEventListener("click", (e) => {
+      e.preventDefault();
+      auth.signOut().then(() => {
+          alert("Signout successful")
+          window.location.href = "index.html";
+      })
+  })
+
+  
+  
+    const signInForm = document.querySelector("#login-form");
+    signInForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+  
+      //get user info
+      const email = signInForm["email"].value;
+      const password = signInForm["password"].value;
+      console.log(email + password)
+  
+  
+  signInWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      // Signed in 
+      const user = userCredential.user;
+      console.log(user);
+      signInForm.reset();
+      alert("login successful")
+      window.location.href = "programdirectory.html";
+      // ...
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(errorMessage)
+    });
+  
+  
+  })
+  
+  
+  </script>
+
+
 <script src="assets/js/leaderboard.js"></script>
 
 </html>
